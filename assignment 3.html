@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="CWEB Assignment 3" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Assignment 3">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+    <meta charset="UTF-8">
+    <meta name="Buwile" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+   <!--<p>I decided what colors I would use for my website by looking at the home page of the website I am trying to mimic.
+        I will use  rgb(58, 58, 122) as the color palette for my website.
+        The background color and the nav color will be impacted by my colors. I am going to use the Zen Dots, cursive font for my headings, paragraphs and body. The wight will be around 300-400 and headings will be h3.-->
+    </p>
+    <style>
+        #container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 105px auto 15%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(29, 28, 28);
+        }
+
+        #flexcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        }
+
+    #nav{
+    border: 2px solid  rgb(58, 58, 122);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    position: relative; top: 200px;
+    font-family: 'Zen Dots', cursive;
+}
+
+    #footer{
+    border: 2px solid rgb(58, 58, 122);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: bottom;
+    font-size: 40px;
+    text-align: center;
+}
+a:link{
+    color: white;
+}
+.News{
+width: 150px;
+height: 150px;
+border: 2px solid white;
+position: relative;bottom: 550px; left: 400px;
+background-image: url(../img/News.jpeg );
+background-size: cover;
+background-position: center;
+font-size: 40px;
+font-weight: bolder;
+border-radius: 10px;
+color: white;
+font-family: 'Zen Dots', cursive;
+
+}
+.Charcaters{
+width: 150px;
+height: 150px;
+border: 2px solid white;
+background-image: url(../img/Characters.jpeg);
+font-size: 20px;
+background-position: center;
+background-size: cover;
+position: relative;bottom: 705px; left: 700px;
+font-weight: bolder;
+border-radius: 10px;
+align-items: center;
+font-family: 'Zen Dots', cursive;
+}
+.Story{
+width: 150px;
+height: 150px;
+border: 2px solid white;
+background-image: url(../img/Story\ image.jpeg);
+font-size: 40px;
+background-position: center;
+background-size: cover;
+position: relative;bottom: 860px; left: 980px; 
+color: white;
+font-weight: bolder;
+border-radius: 10px;
+align-items: center;
+font-family: 'Zen Dots', cursive;
+}
+.Summons{
+width: 150px;
+height: 150px;
+border: 2px solid white;
+font-size: 20px;
+background-image: url(../img/Summon.png);
+background-position: center;
+background-size: cover;
+position: relative;bottom: 1015px; left: 1300px; 
+border-radius: 10px;
+color: white;
+font-family: 'Zen Dots', cursive;
+
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <nav id="nav" id="a:link">
+<a href="News">News</a>
+<a href="Characters" style="">Characters</a>
+<a href="Story">Story</a>
+<a href="Summon">Summon</a>
+    </nav>
+    <footer id="footer" >
+    <a href="Footer">Footer</a>
+    </footer>
+</div>
+  <div class="News" style="text-align: center;"><a href="News">News</a> </div>
+  <div class="Charcaters" style="text-align: center;"><a href="Characters">Characters</a> </div>
+  <div class="Story" style="text-align: center;"><a href="Story">Story</a></div>
+  <div class="Summons" style="text-align: center;"><a href="Summons">Summons</a></div>
+  <div></div>
+</body>
+</html>
